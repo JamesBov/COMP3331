@@ -1,0 +1,218 @@
+Exercise 1
+
+www.cancercouncil.org.au 	? 
+compnet.epfl.ch 	Y
+www.intel.com.au	Y
+www.telstra.com.au	Y
+www.hola.hp 	?  Unknown host
+www.amazon.com 		Y
+www.wikileaks.org 	Y - Packetloss
+www.tsinghua.edu.cn 	Y
+www.kremlin.ru		N
+8.8.8.8 		Y Can't visit with browser
+
+
+Exercise 2
+
+1.  www.nyu.edu 
+
+traceroute to www.nyu.edu (216.165.47.12), 30 hops max, 60 byte packets
+ 1  cserouter1-server.cse.unsw.EDU.AU (129.94.242.251)  0.445 ms  0.443 ms  0
+ 2  129.94.39.17 (129.94.39.17)  1.285 ms  1.266 ms  1.235 ms
+ 3  libudnex1-vl-3154.gw.unsw.edu.au (149.171.253.34)  2.830 ms  2.809 ms  2.
+ 4  ombcr1-po-5.gw.unsw.edu.au (149.171.255.197)  1.570 ms  1.581 ms libcr1-p
+ 5  unswbr1-te-2-13.gw.unsw.edu.au (149.171.255.105)  1.654 ms unswbr1-te-1-9
+ 6  138.44.5.0 (138.44.5.0)  2.003 ms  1.490 ms  1.510 ms
+ 7  et-1-3-0.pe1.sxt.bkvl.nsw.aarnet.net.au (113.197.15.149)  2.329 ms  2.452
+ 8  et-0-0-0.pe1.a.hnl.aarnet.net.au (113.197.15.99)  95.344 ms  95.260 ms  9
+ 9  et-2-1-0.bdr1.a.sea.aarnet.net.au (113.197.15.201)  146.570 ms  146.556 m
+10  abilene-1-lo-jmb-706.sttlwa.pacificwave.net (207.231.240.8)  146.681 ms
+11  et-4-0-0.4079.sdn-sw.miss2.net.internet2.edu (162.252.70.0)  157.289 ms
+12  et-4-0-0.4079.sdn-sw.minn.net.internet2.edu (162.252.70.58)  180.360 ms
+13  et-7-0-0.4079.sdn-sw.eqch.net.internet2.edu (162.252.70.106)  188.122 ms
+14  et-2-3-0.4079.rtsw.clev.net.internet2.edu (162.252.70.130)  196.649 ms  1
+15  buf-9208-I2-CLEV.nysernet.net (199.109.11.33)  201.143 ms  201.039 ms  20
+16  syr-9208-buf-9208.nysernet.net (199.109.7.193)  204.529 ms  204.752 ms  2
+17  nyc-9208-syr-9208.nysernet.net (199.109.7.162)  210.134 ms  210.230 ms  2
+18  199.109.5.6 (199.109.5.6)  210.438 ms  210.636 ms  210.610 ms
+19  DMZGWA-PTP-EXTGWA.NET.NYU.EDU (128.122.254.65)  211.074 ms  210.951 ms  2
+20  NYUGWA-PTP-DMZGWA-NGFW.NET.NYU.EDU (128.122.254.108)  210.742 ms  210.652
+21  NYUFW-OUTSIDE-NGFW.NET.NYU.EDU (128.122.254.116)  211.156 ms  211.035 ms
+22  * * *
+23  WSQDCGWA-VL902.NET.NYU.EDU (128.122.1.38)  211.635 ms  211.535 ms  211.52
+
+
+(a) 22  (b) 5
+(c)  et-1-3-0.pe1.sxt.bkvl.nsw.aarnet.net.au (113.197.15.149) -> 
+	 et-0-0-0.pe1.a.hnl.aarnet.net.au (113.197.15.99) ->
+	 et-2-1-0.bdr1.a.sea.aarnet.net.au (113.197.15.201)
+
+
+2.  
+
+traceroute to www.ucla.edu (164.67.228.152), 30 hops max, 60 byte packets
+ 1  cserouter1-server.cse.unsw.EDU.AU (129.94.242.251)  0.410 ms  0.400 ms  0
+ 2  129.94.39.17 (129.94.39.17)  1.343 ms  1.356 ms  1.297 ms
+ 3  libudnex1-vl-3154.gw.unsw.edu.au (149.171.253.34)  2.042 ms ombudnex1-vl-(149.171.253.34)  2.020 ms
+ 4  libcr1-po-6.gw.unsw.edu.au (149.171.255.201)  1.476 ms ombcr1-po-6.gw.uns)  1.528 ms
+ 5  unswbr1-te-2-13.gw.unsw.edu.au (149.171.255.105)  1.520 ms  1.548 ms  1.5
+ 6  138.44.5.0 (138.44.5.0)  1.635 ms  1.429 ms  1.382 ms
+ 7  et-1-3-0.pe1.sxt.bkvl.nsw.aarnet.net.au (113.197.15.149)  2.366 ms  2.808
+ 8  et-0-0-0.pe1.a.hnl.aarnet.net.au (113.197.15.99)  95.506 ms  95.545 ms  9
+ 9  et-2-1-0.bdr1.a.sea.aarnet.net.au (113.197.15.201)  146.858 ms  146.852 m
+10  cenichpr-1-is-jmb-778.snvaca.pacificwave.net (207.231.245.129)  163.609 m
+11  hpr-lax-hpr3--svl-hpr3-100ge.cenic.net (137.164.25.73)  171.709 ms  171.7
+12  * * *
+13  bd11f1.anderson--cr001.anderson.ucla.net (169.232.4.6)  172.523 ms bd11f1
+14  cr00f1.anderson--dr00f2.csb1.ucla.net (169.232.4.55)  171.491 ms cr00f2.c1.ucla.net (169.232.4.55)  171.448 ms
+
+
+traceroute to www.u-tokyo.ac.jp (210.152.135.178), 30 hops max, 60 byte packe
+ 1  cserouter1-server.cse.unsw.EDU.AU (129.94.242.251)  0.465 ms  0.455 ms  0
+ 2  129.94.39.17 (129.94.39.17)  1.390 ms  1.399 ms  1.383 ms
+ 3  libudnex1-vl-3154.gw.unsw.edu.au (149.171.253.34)  2.012 ms  2.049 ms omb
+ 4  libcr1-po-5.gw.unsw.edu.au (149.171.255.165)  1.649 ms ombcr1-po-6.gw.uns)  1.640 ms
+ 5  unswbr1-te-2-13.gw.unsw.edu.au (149.171.255.105)  1.665 ms  1.699 ms unsw
+ 6  138.44.5.0 (138.44.5.0)  1.908 ms  1.528 ms  1.524 ms
+ 7  et-0-3-0.pe1.bkvl.nsw.aarnet.net.au (113.197.15.147)  2.024 ms  2.052 ms
+ 8  ge-4_0_0.bb1.a.pao.aarnet.net.au (202.158.194.177)  156.820 ms  156.913 m
+ 9  paloalto0.iij.net (198.32.176.24)  158.561 ms  158.646 ms  158.594 ms
+10  osk004bb01.IIJ.Net (58.138.88.189)  271.957 ms osk004bb00.IIJ.Net (58.138
+11  osk004ix51.IIJ.Net (58.138.107.174)  271.566 ms osk004ix51.IIJ.Net (58.13
+12  210.130.135.130 (210.130.135.130)  281.321 ms  281.316 ms  291.339 ms
+13  124.83.228.78 (124.83.228.78)  281.180 ms  290.676 ms  291.910 ms
+14  124.83.252.250 (124.83.252.250)  298.386 ms  287.900 ms  289.664 ms
+15  158.205.134.26 (158.205.134.26)  299.259 ms  289.629 ms  289.608 ms
+
+
+
+
+
+traceroute to www.lancaster.ac.uk (148.88.2.80), 30 hops max, 60 byte packets
+ 1  cserouter1-server.cse.unsw.EDU.AU (129.94.242.251)  0.411 ms  0.400 ms  0
+ 2  129.94.39.17 (129.94.39.17)  1.343 ms  1.318 ms  1.316 ms
+ 3  libudnex1-vl-3154.gw.unsw.edu.au (149.171.253.34)  2.175 ms  2.155 ms  2.
+ 4  libcr1-po-6.gw.unsw.edu.au (149.171.255.201)  1.516 ms ombcr1-po-5.gw.uns)  1.505 ms
+ 5  unswbr1-te-2-13.gw.unsw.edu.au (149.171.255.105)  1.617 ms  1.576 ms  1.6
+ 6  138.44.5.0 (138.44.5.0)  1.666 ms  1.438 ms  1.416 ms
+ 7  et-1-3-0.pe1.sxt.bkvl.nsw.aarnet.net.au (113.197.15.149)  2.442 ms  2.885
+ 8  et-0-0-0.pe1.a.hnl.aarnet.net.au (113.197.15.99)  95.548 ms  95.481 ms  9
+ 9  et-2-1-0.bdr1.a.sea.aarnet.net.au (113.197.15.201)  146.775 ms  146.767 m
+10  abilene-1-lo-jmb-706.sttlwa.pacificwave.net (207.231.240.8)  168.351 ms
+11  et-4-0-0.4079.sdn-sw.miss2.net.internet2.edu (162.252.70.0)  157.857 ms
+12  et-4-0-0.4079.sdn-sw.minn.net.internet2.edu (162.252.70.58)  180.726 ms
+13  et-7-0-0.4079.sdn-sw.eqch.net.internet2.edu (162.252.70.106)  188.267 ms
+14  et-4-1-0.4079.rtsw.clev.net.internet2.edu (162.252.70.112)  196.911 ms  1
+15  et-2-0-0.4079.sdn-sw.ashb.net.internet2.edu (162.252.70.54)  204.754 ms
+16  et-8-1-0.4079.rtsw.wash.net.internet2.edu (162.252.70.67)  205.734 ms  20
+17  internet2-gw.mx1.lon.uk.geant.net (62.40.124.44)  280.423 ms  279.684 ms
+18  janet-gw.mx1.lon.uk.geant.net (62.40.124.198)  279.600 ms  279.551 ms  27
+19  ae29.londpg-sbr2.ja.net (146.97.33.2)  280.157 ms  280.295 ms  280.625 ms
+20  ae31.erdiss-sbr2.ja.net (146.97.33.22)  284.245 ms  284.240 ms  284.244 m
+21  ae29.manckh-sbr1.ja.net (146.97.33.42)  286.193 ms  286.174 ms  286.032 m
+22  cnl.manckh-sbr1.ja.net (146.97.41.54)  288.404 ms  288.498 ms  288.386 ms
+23  * * *
+24  ismx-issrx.rtr.lancs.ac.uk (148.88.255.17)  290.053 ms  290.128 ms  290.0
+25  dc.iss.srv.rtrcloud.lancs.ac.uk (148.88.253.3)  298.454 ms  298.424 ms  2
+26  www-ha.lancs.ac.uk (148.88.2.80)  289.898 ms !X  289.850 ms !X  289.832 ms
+
+No, we can deduce this by comparing the physical distances from sydney to tokyo and and california being very different although almost the same number of hops.
+
+
+
+Divergence appears to occur at the 7th hop, router
+et-1-3-0.pe1.sxt.bkvl.nsw.aarnet.net.au (113.197.15.149)
+
+
+
+3. http://www.speedtest.com.sg
+
+(i)
+
+Singapore to me
+
+traceroute to 129.94.242.251 (129.94.242.251), 30 hops max, 60 byte packets
+ 1  ge2-8.r01.sin01.ne.com.sg (202.150.221.169)  0.194 ms  0.248 ms  0.259 ms
+ 2  10.11.34.14 (10.11.34.14)  3.020 ms  3.083 ms  3.151 ms
+ 3  sin-a-bb1.aarnet.net.au (103.16.102.67)  238.860 ms  238.884 ms  238.867 ms
+ 4  so-4-1-0.bb1.b.syd.aarnet.net.au (202.158.194.244)  240.672 ms  240.590 ms  240.736 ms
+ 5  ge-0-0-0.bb1.a.syd.aarnet.net.au (202.158.194.197)  238.873 ms  238.881 ms  238.994 ms
+ 6  ae9.pe2.brwy.nsw.aarnet.net.au (113.197.15.56)  238.234 ms  238.355 ms  238.211 ms
+ 7  et-3-1-0.pe1.brwy.nsw.aarnet.net.au (113.197.15.146)  238.973 ms  239.031 ms  239.035 ms
+ 8  138.44.5.1 (138.44.5.1)  227.333 ms  227.332 ms  227.319 ms
+ 9  ombcr1-te-1-5.gw.unsw.edu.au (149.171.255.106)  236.592 ms  236.533 ms  236.578 ms
+10  libudnex1-po-2.gw.unsw.edu.au (149.171.255.198)  228.223 ms  228.258 ms  228.283 ms
+11  ufw1-ae-1-3154.gw.unsw.edu.au (149.171.253.36)  237.101 ms  237.188 ms  237.155 ms
+
+
+me to Singapore
+
+traceroute to www.speedtest.com.sg (202.150.221.170), 30 hops max, 60 byte packets
+ 1  cserouter1-server.cse.unsw.EDU.AU (129.94.242.251)  0.151 ms  0.199 ms  0.188 ms
+ 2  129.94.39.17 (129.94.39.17)  1.041 ms  1.038 ms  1.110 ms
+ 3  ombudnex1-vl-3154.gw.unsw.edu.au (149.171.253.35)  1.788 ms  2.064 ms  1.732 ms
+ 4  ombcr1-po-6.gw.unsw.edu.au (149.171.255.169)  8.592 ms libcr1-po-5.gw.unsw.edu.au (149.171.255.165)  1.278 ms  1.290 ms
+ 5  unswbr1-te-1-9.gw.unsw.edu.au (149.171.255.101)  1.294 ms unswbr1-te-2-13.gw.unsw.edu.au (149.171.255.105)  1.390 ms  1.303 ms
+ 6  138.44.5.0 (138.44.5.0)  1.468 ms  1.345 ms  1.730 ms
+ 7  et-0-3-0.pe1.alxd.nsw.aarnet.net.au (113.197.15.153)  2.175 ms  2.109 ms  2.158 ms
+ 8  xe-0-0-3.pe1.wnpa.akl.aarnet.net.au (113.197.15.67)  24.433 ms  24.446 ms  24.456 ms
+ 9  et-0-1-0.200.pe1.tkpa.akl.aarnet.net.au (113.197.15.69)  24.744 ms  24.753 ms  24.831 ms
+10  xe-0-2-6.bdr1.a.lax.aarnet.net.au (202.158.194.173)  148.197 ms  148.230 ms  148.223 ms
+11  singtel.as7473.any2ix.coresite.com (206.72.210.63)  309.660 ms  309.641 ms  309.403 ms
+12  203.208.172.173 (203.208.172.173)  301.173 ms 203.208.171.117 (203.208.171.117)  306.804 ms 203.208.172.173 (203.208.172.173)  301.828 ms
+13  203.208.173.161 (203.208.173.161)  327.943 ms 203.208.171.85 (203.208.171.85)  332.865 ms 203.208.173.161 (203.208.173.161)  325.658 ms
+14  203.208.182.45 (203.208.182.45)  327.154 ms  340.889 ms 203.208.171.198 (203.208.171.198)  326.852 ms
+15  203.208.177.110 (203.208.177.110)  240.596 ms  228.439 ms  240.678 ms
+16  202-150-221-170.rev.ne.com.sg (202.150.221.170)  235.393 ms  228.324 ms  241.505 ms
+
+
+(ii)
+www.telstra.net
+
+telstra.net to me
+
+ 1  gigabitethernet3-3.exi2.melbourne.telstra.net (203.50.77.53)  0.366 ms  0.204 ms  0.244 ms
+ 2  bundle-ether3-100.win-core10.melbourne.telstra.net (203.50.80.129)  1.238 ms  1.853 ms  1.992 ms
+ 3  bundle-ether12.ken-core10.sydney.telstra.net (203.50.11.122)  12.359 ms  12.224 ms  12.858 ms
+ 4  bundle-ether1.ken-edge901.sydney.telstra.net (203.50.11.95)  11.861 ms  11.974 ms  11.861 ms
+ 5  aarnet6.lnk.telstra.net (139.130.0.78)  11.609 ms  11.598 ms  11.610 ms
+ 6  ge-6-0-0.bb1.a.syd.aarnet.net.au (202.158.202.17)  11.737 ms  12.601 ms  11.737 ms
+ 7  ae9.pe2.brwy.nsw.aarnet.net.au (113.197.15.56)  11.984 ms  12.101 ms  12.108 ms
+ 8  et-3-1-0.pe1.brwy.nsw.aarnet.net.au (113.197.15.146)  12.111 ms  12.099 ms  12.113 ms
+ 9  138.44.5.1 (138.44.5.1)  12.359 ms  12.353 ms  12.609 ms
+10  ombcr1-te-1-5.gw.unsw.edu.au (149.171.255.106)  12.364 ms  12.344 ms  12.358 ms
+11  libudnex1-po-2.gw.unsw.edu.au (149.171.255.198)  12.610 ms  12.597 ms  12.609 ms
+12  ufw1-ae-1-3154.gw.unsw.edu.au (149.171.253.36)  12.860 ms  12.847 ms  12.860 ms
+
+
+
+me to www.telstra.net
+
+traceroute to www.telstra.net (203.50.5.178), 30 hops max, 60 byte packets
+ 1  cserouter1-server.cse.unsw.EDU.AU (129.94.242.251)  0.421 ms  0.417 ms  0.405 ms
+ 2  129.94.39.17 (129.94.39.17)  1.369 ms  1.339 ms  1.345 ms
+ 3  libudnex1-vl-3154.gw.unsw.edu.au (149.171.253.34)  2.279 ms  2.229 ms  2.214 ms
+ 4  ombcr1-po-5.gw.unsw.edu.au (149.171.255.197)  1.521 ms ombcr1-po-6.gw.unsw.edu.au (149.171.255.169)  1.491 ms libcr1-po-5.gw.unsw.edu.au (149.171.255.165)  1.454 ms
+ 5  unswbr1-te-2-13.gw.unsw.edu.au (149.171.255.105)  1.648 ms  1.626 ms unswbr1-te-1-9.gw.unsw.edu.au (149.171.255.101)  1.670 ms
+ 6  138.44.5.0 (138.44.5.0)  1.653 ms  1.436 ms  1.452 ms
+ 7  et-0-3-0.pe1.alxd.nsw.aarnet.net.au (113.197.15.153)  1.614 ms  1.800 ms  1.654 ms
+ 8  ae9.bb1.b.syd.aarnet.net.au (113.197.15.65)  1.963 ms  2.338 ms  2.369 ms
+ 9  gigabitethernet1-1.pe1.b.syd.aarnet.net.au (202.158.202.18)  2.600 ms  2.605 ms  2.565 ms
+10  gigabitethernet3-11.ken37.sydney.telstra.net (139.130.0.77)  2.888 ms  3.126 ms  3.406 ms
+11  bundle-ether13.ken-core10.sydney.telstra.net (203.50.11.94)  3.506 ms  3.632 ms  5.129 ms
+12  bundle-ether12.win-core10.melbourne.telstra.net (203.50.11.123)  15.500 ms  15.498 ms  15.349 ms
+13  gigabitethernet5-0.exi-service2.melbourne.telstra.net (203.50.80.132)  13.980 ms  14.118 ms  13.463 ms
+
+
+No, the reverse path in both cases differ. This is due to the routing policies and traffic engineering of provider networks, as packets exiting a network will follow the policies of that network rather the policies of the desintation network. Hence, the reverse paths will usually be different.
+
+
+3. 
+
+1) uni of QLD - 938km Packet travel time = 3.126ms  16.613
+   uni of sg - 6302km t_time = 21ms	145.300
+   uni of berlin - 16084km = 53.6ms 302.864
+
+
+
+
